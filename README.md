@@ -1,6 +1,6 @@
 # GuideForum
 
-## Курсовой проект на курсе Tinkoff Fintech School, Frontend, весна 2023
+## Курсовой проект Tinkoff Fintech School, Frontend, весна 2023
 Выполнила Караваева Екатерина Андреевна  
 [Ссылка на курсовую работу](https://coursework-katya-karavaeva.vercel.app)
 ## Описание проекта
