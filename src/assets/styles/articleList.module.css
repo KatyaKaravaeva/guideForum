@@ -1,0 +1,172 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.articleLink {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.articleLink:hover {
+  background-color: #9ee1f885;
+  color: #f0f8ff;
+}
+
+.articleLink:active {
+  transform: scale(0.95);
+}
+
+.articleBox {
+  width: 520px;
+  min-width: 300px;
+  height: 100px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #008cba;
+  border-radius: 10px;
+  color: #008cba;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  background-color: #f0f8ff;
+  box-shadow: 2px 2px 5px #bebebe;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+}
+
+.articleBox:hover {
+  background-color: #008cba;
+  color: #f0f8ff;
+}
+
+.articleButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.articleTitle {
+  word-wrap: break-word;
+}
+
+.commentButton,
+.bookmarkButton {
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+  background-color: #008cba;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #bebebe;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.commentButton:hover,
+.bookmarkButton:hover {
+  background-color: #00657a;
+}
+
+.commentButton:focus,
+.bookmarkButton:focus {
+  outline: none;
+}
+
+.commentButton:active,
+.bookmarkButton:active {
+  transform: scale(0.95);
+}
+
+.header__search {
+  margin-left: auto;
+  position: relative;
+}
+
+.header__search_field {
+  width: 100%;
+  height: 100%;
+  padding: 8px 8px 8px 38px;
+}
+
+.header__search_icon {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  background-color: #000000;
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgOTYgOTYwIDk2MCIgd2lkdGg9IjQ4Ij48cGF0aCBkPSJNNzk2IDkzNSA1MzMgNjcycS0zMCAyNi02OS45NTkgNDAuNVQzNzggNzI3cS0xMDguMTYyIDAtMTgzLjA4MS03NVExMjAgNTc3IDEyMCA0NzF0NzUtMTgxcTc1LTc1IDE4MS41LTc1dDE4MSA3NVE2MzIgMzY1IDYzMiA0NzEuMTUgNjMyIDUxNCA2MTggNTU0cS0xNCA0MC00MiA3NWwyNjQgMjYyLTQ0IDQ0Wk0zNzcgNjY3cTgxLjI1IDAgMTM4LjEyNS01Ny41VDU3MiA0NzFxMC04MS01Ni44NzUtMTM4LjVUMzc3IDI3NXEtODIuMDgzIDAtMTM5LjU0MiA1Ny41UTE4MCAzOTAgMTgwIDQ3MXQ1Ny40NTggMTM4LjVRMjk0LjkxNyA2NjcgMzc3IDY2N1oiLz48L3N2Zz4=");
+  -webkit-mask: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgOTYgOTYwIDk2MCIgd2lkdGg9IjQ4Ij48cGF0aCBkPSJNNzk2IDkzNSA1MzMgNjcycS0zMCAyNi02OS45NTkgNDAuNVQzNzggNzI3cS0xMDguMTYyIDAtMTgzLjA4MS03NVExMjAgNTc3IDEyMCA0NzF0NzUtMTgxcTc1LTc1IDE4MS41LTc1dDE4MSA3NVE2MzIgMzY1IDYzMiA0NzEuMTUgNjMyIDUxNCA2MTggNTU0cS0xNCA0MC00MiA3NWwyNjQgMjYyLTQ0IDQ0Wk0zNzcgNjY3cTgxLjI1IDAgMTM4LjEyNS01Ny41VDU3MiA0NzFxMC04MS01Ni44NzUtMTM4LjVUMzc3IDI3NXEtODIuMDgzIDAtMTM5LjU0MiA1Ny41UTE4MCAzOTAgMTgwIDQ3MXQ1Ny40NTggMTM4LjVRMjk0LjkxNyA2NjcgMzc3IDY2N1oiLz48L3N2Zz4=");
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  transition: 0.3s all ease;
+}
+@media (max-width: 608px) {
+  .container {
+    margin-top: 10px;
+  }
+
+  .articleBox {
+    width: calc(100% - 20px);
+    max-width: 200px;
+    height: auto;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .articleLink {
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .articleBoxButtons {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .articleButton {
+    margin-bottom: 5px;
+  }
+
+  .header__search {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+
+  .header__search_field {
+    width: 100%;
+  }
+
+  .header__search_icon {
+    left: 10px;
+  }
+}

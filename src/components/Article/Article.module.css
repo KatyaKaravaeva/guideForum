@@ -1,0 +1,153 @@
+.user_profile {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #88bbced7;
+  box-shadow: 0 2px 4px rgba(0.1, 0.1, 0.1, 0.2);
+}
+
+.user_header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.avatar_wrapper {
+  margin-right: 20px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user_name {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.header__nav_link {
+  text-decoration: none;
+}
+
+.subscribe_btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: 1px solid #88bbce;
+  background-color: #fff;
+  color: #3a8fad;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.subscribe_btn:hover {
+  background-color: #88bbce;
+  color: #fff;
+}
+
+.article_wrapper {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.34);
+}
+
+.article_title {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 600;
+  color: #333;
+}
+
+.article_content {
+  margin: 20px 0;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.comment_btn {
+  margin-right: 20px;
+  padding: 8px 16px;
+  border: 1px solid #88bbce;
+  background-color: #fff;
+  color: #3a8fad;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.comment_btn:hover {
+  background-color: #88bbce;
+  color: #fff;
+}
+
+.bookmark_btn {
+  margin-right: 20px;
+  padding: 8px 16px;
+  border: 1px solid #88bbce;
+  background-color: #fff;
+  color: #3a8fad;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.bookmark_btn:hover {
+  background-color: #88bbce;
+  color: #fff;
+}
+
+.bookmark__like {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.heart {
+  margin-right: 11px;
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}
+
+.heart_btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.heart_count__span {
+  font-size: 17px;
+  font-weight: 600;
+  color: #333;
+}
+
+@media (max-width: 480px) {
+  .user_header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user_name {
+    align-self: center;
+    margin-bottom: 0;
+  }
+}

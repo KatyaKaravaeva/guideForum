@@ -1,0 +1,155 @@
+.articleBox {
+  width: 548px;
+  height: 100px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #008cba;
+  border-radius: 10px;
+  color: #008cba;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  background-color: #f0f8ff;
+  box-shadow: 2px 2px 5px #bebebe;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+}
+
+.articleBox:hover {
+  background-color: #008cba;
+  color: #f0f8ff;
+}
+
+.articleBoxButtons {
+  display: flex;
+  align-items: center;
+}
+
+.articleButton {
+  margin-left: 18px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.articleButton:hover {
+  transform: scale(1.1);
+}
+
+.commentIcon {
+  width: 28px;
+  height: 28px;
+}
+
+.bookmarkIcon {
+  width: 28px;
+  height: 28px;
+}
+
+.switching_block {
+  display: flex;
+  align-items: center;
+}
+
+.switching_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switching {
+  text-align: center;
+  color: white;
+  position: relative;
+  user-select: none;
+  background-image: url(https://damion.club/uploads/posts/2022-01/1642195562_67-damion-club-p-fon-sinii-gradient-67.jpg);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: #ffffff;
+  animation: filling 8s infinite;
+  font-weight: 800;
+  font-size: 4rem;
+  letter-spacing: 0.5px;
+  font-family: "Сomic Sans MS", initial;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffffff;
+}
+
+@keyframes filling {
+  from {
+    background-position: center 25%;
+  }
+  to {
+    background-position: center 50%;
+  }
+}
+
+.header__return_img {
+  margin-top: 8px;
+  width: 60px;
+  height: 100%;
+}
+
+.change_articles_button {
+  position: absolute;
+  right: 0;
+}
+
+.subscribe_articles_button {
+  margin-top: 18px;
+  margin-right: 10px;
+  display: inline-block;
+  background-color: #65abc5;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.8rem 3rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.subscribe_articles_button:hover {
+  background-color: #3da0c4;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 915px) {
+  .switching_block {
+    display: flex;
+    flex-direction: column;
+  }
+  .change_articles_button {
+    order: -1;
+    margin-left: auto;
+    margin-top: 10px;
+    position: relative;
+    top: 0;
+    transform: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .switching_block {
+    display: flex;
+    flex-direction: column;
+  }
+  .change_articles_button {
+    order: -1;
+    margin-left: auto;
+    margin-top: 10px;
+    position: relative;
+    top: 0;
+    transform: none;
+  }
+
+  .switching {
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,15 @@
+.centered_text{
+    margin-top: 25px;
+    text-align: center;
+    color: white;
+    position: relative;
+    user-select: none;
+    color: #ffffff;
+    animation: filling 8s infinite;
+    font-weight: 800;
+    font-size: 4.3rem;
+    letter-spacing: 0.5px;
+    font-family: "Сomic Sans MS", initial;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+}
